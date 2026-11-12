@@ -82,14 +82,14 @@
 
     function addMessage(content, sender) {
       const msg = document.createElement('div');
-      msg.className = \`message \${sender}\`;
+      msg.className = `message ${sender}`;
       msg.textContent = content;
       chatbox.appendChild(msg);
       chatbox.scrollTop = chatbox.scrollHeight;
     }
 
     async function getBotReply(message) {
-      return \`Exploring: \${message}? Don't miss local food, heritage spots, and guided tours!\`;
+      return `Exploring: ${message}? Don't miss local food, heritage spots, and guided tours!`;
     }
 
     button.addEventListener('click', async () => {
